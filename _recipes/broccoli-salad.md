@@ -18,6 +18,5 @@ ingredients:
 instructions:
 - Mix it all together
 - Chill at least 4 hours (or overnight)
-published: false
 
 ---
