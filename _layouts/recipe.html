@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+    <p class="index"><a href="/">Recipes</a></p>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+    {% if page.servings %}<p><b>Servings:</b> {{ page.servings }}</p>{% endif %}
+    <div class="cooktimes">
+        {% if page.preptime %}
+            {% assign preptime = page.preptime %}
+            {% assign prepminutes = preptime | modulo: 60 %}
+            <div class="cooktime">
+                <b>Prep</b><br>
+                {% if preptime >= 60 %}{{ preptime | divided_by: 60}} hr{% endif %}{% if prepminutes > 0 %} {{ prepminutes }} min{% endif %}
+            </div>
+        {% endif %}
+        {% if page.cooktime %}
+            {% assign cooktime = page.cooktime %}
+            {% assign cookminutes = cooktime | modulo: 60 %}
+            <div class="cooktime">
+                <b>Cook</b><br>
+                {% if cooktime >= 60 %}{{ cooktime | divided_by: 60}} hr{% endif %}{% if cookminutes > 0 %} {{ cookminutes }} min{% endif %}
+            </div>
+        {% endif %}
+        {% if page.preptime and page.cooktime %}
+            {% assign totaltime = page.preptime | plus: page.cooktime %}
+            {% assign totalminutes = totaltime | modulo: 60 %}
+            <div class="cooktime">
+                <b>Total</b><br>
+                {% if totaltime >= 60 %}{{ totaltime | divided_by: 60}} hr{% endif %}{% if totalminutes > 0 %} {{ totalminutes }} min{% endif %}
+            </div>
+        {% endif %}
+    </div>
+    {% if page.source %}
+        {% if page.source.name != null and page.source.name != "" %}
+        {% assign source_display = page.source.name %}
+        {% elsif page.source.url != null and page.source.url != "" %}
+        {% assign source_display = page.source.url %}
+        {% else %}
+        {% assign source_display = "Unknown" %}
+        {% endif %}
+        <p><b>Source:</b> {% if page.source.url != null and page.source.url != "" %}<a href="{{page.source.url}}">{{source_display}}</a>{% else %}{{source_display}}{% endif %}</p>
+    {% endif %}
+    <h2>Ingredients</h2>
+    <ul>
+        {% for ingredient in page.ingredients %}
+        <li>{{ ingredient }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Instructions</h2>
+    <ol>
+        {% for instruction in page.instructions %}
+        <li>{{ instruction }}</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+    <h1>Recipes</h1>
+    {% assign groups = site.recipes | group_by: "category" | sort: "title" %}
+    {% for group in groups %}
+        <h2>{{ group.name }}</h2>
+        <ul>
+            {% for recipe in group.items %}
+            <li><a href="{{ recipe.url }}">{{ recipe.title }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+</body>
+</html>
+
+

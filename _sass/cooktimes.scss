@@ -1,0 +1,13 @@
+.cooktimes {
+    font-size: smaller;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+
+    .cooktime {
+        border: 1px solid var(--text-color);
+        margin-right: 0.5rem;
+        padding: 0.5rem;
+        text-align: center;
+    }
+}
