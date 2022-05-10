@@ -5,37 +5,73 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
+  default: recipe
+  config:
+    required: true
 - type: text
   name: title
-  label: title
+  label: Recipe Title / Name
+  config:
+    required: true
 - type: text
   name: description
-  label: description
-- type: text
-  name: category
-  label: category
+  label: Description
+  description: A short description about the recipe
+- name: category
+  type: select
+  default: Baking
+  config:
+    required: true
+    options:
+    - Baking
+    - Breakfast
+    - Dinner
+    - Dessert
+    - Drinks
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+  description: What type of recipe is this?
 - type: field_group
   name: source
-  label: source
+  label: Source
   fields:
   - type: text
     name: name
-    label: name
+    label: Name
+    description: The name of the person / organisation the recipe is from.
   - type: text
     name: url
-    label: url
+    label: URL
+    description: A URL to the source of the recipe (if available)
+  description: Where is this recipe from?
 - type: number
   name: preptime
-  label: preptime
+  label: Prep Time
+  description: How long (in minutes) does it take to prepare this recipe?
 - type: number
   name: cooktime
-  label: cooktime
+  label: Cook Time
+  description: How long (in minutes) does it take to cook this recipe?
 - type: number
   name: servings
-  label: servings
+  label: Servings
+  description: How many servings does this recipe normally make?
 - type: list
   name: ingredients
-  label: ingredients
+  label: Ingredients
+  description: The ingredients in the recipe. Try to order them in the order they
+    will be used in the instructions.
+  config:
+    use_select: false
+    min: 1
 - type: list
   name: instructions
-  label: instructions
+  label: Instructions
+  description: The recipe instructions!
+  config:
+    min: 1
