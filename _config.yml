@@ -1,14 +1,9 @@
 title: Recipes
 description: >-
   Recipes I've collected
-baseurl: ""
-url: "https://recipes.hamaluik.ca"
-
-markdown: CommonMark
-
-commonmark:
-  options: ["SMART"]
-  extensions: []
+domain: hamaluik.github.io
+url: https://hamaluik.github.io
+baseurl: /recipes/
 
 collections:
   recipes:
