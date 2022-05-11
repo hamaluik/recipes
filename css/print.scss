@@ -7,7 +7,7 @@ $baseurl: "{{ site.baseurl }}";
 @import 'cooktimes';
 
 @media print {
-    .index {
+    footer {
         display: none;
     }
 
