@@ -30,6 +30,8 @@ fields:
     - Dinner
     - Dessert
     - Drinks
+    - Other
+    - Snack / Side
     source:
       type: simple
       section: 
