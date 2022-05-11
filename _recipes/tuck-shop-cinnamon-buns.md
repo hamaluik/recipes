@@ -50,3 +50,7 @@ instructions:
 - Bake at 375 °F for 30 minutes. Should make 18 good-sized buns.
 
 ---
+## Notes
+
+* An electric mixer is needed for this recipe as it requires a lot of beating
+* If the dough is too soft to handle, add a bit more flour. However, the less flour used the better the buns will be
