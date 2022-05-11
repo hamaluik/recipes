@@ -2,7 +2,7 @@
 layout: recipe
 category: Baking
 title: Rice Krispie Squares
-description: ''
+description: Soft Rice Krispies that stay soft
 source:
   name: Corey Valley
   url: https://www.familyfreshmeals.com/2014/01/always-soft-chewy-rice-crispy-treats.html
