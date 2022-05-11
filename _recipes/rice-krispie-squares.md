@@ -22,6 +22,5 @@ instructions:
 - Remove from heat and stir in Rice Krispies and optional sprinkles
 - Grease a 9x9 baking pan and spread the mixture out to fill the pan
 - Let cool then cut into squares
-published: false
 
 ---
