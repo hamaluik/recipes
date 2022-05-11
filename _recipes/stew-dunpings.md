@@ -1,6 +1,6 @@
 ---
 layout: recipe
-category: Dinner
+category: Snack / Side
 title: Stew Dumplins
 description: Dumplings to sit on top of a stew
 source:

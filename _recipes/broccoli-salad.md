@@ -1,6 +1,6 @@
 ---
 layout: recipe
-category: Dinner
+category: Snack / Side
 title: Broccoli Salad
 description: ''
 source:
