@@ -1,6 +1,6 @@
 ---
 layout: recipe
-category: Baking
+category: Snack / Side
 title: Green Onion Cakes
 description: ''
 source:
@@ -19,11 +19,7 @@ ingredients:
 - 1 tsp sesame oil
 - 2 tsp salt
 - 2-3 bunches green onion
-instructions:
-- Make the dough
-- Make the green onion mixture
-- Form the green onion cakes
-- Fry the green onion cakes
+instructions: []
 
 ---
 1. Make the dough
