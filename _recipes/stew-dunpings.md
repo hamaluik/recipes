@@ -1,7 +1,7 @@
 ---
 layout: recipe
 category: Dinner
-title: Stew Dunpings
+title: Stew Dumplins
 description: Dumplings to sit on top of a stew
 source:
   name: The Spruce Eats
