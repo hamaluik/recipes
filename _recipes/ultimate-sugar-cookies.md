@@ -25,6 +25,5 @@ instructions:
 - Refridgerate
 - Shape, drop, roll and cut, etc. as desired
 - Bake at 350 ℉ for 8–10 minutes
-published: false
 
 ---
