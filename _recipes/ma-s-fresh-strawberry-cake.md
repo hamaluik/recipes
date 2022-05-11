@@ -85,6 +85,5 @@ instructions:
 - 'FROSTING:  Mix the frosting on high until it is super fluffy and airy. If the frosting
   is thick and heavy, it hasn''t been mixed enough. It will not look like enough frosting
   to frost the cakes but it will be! '
-published: false
 
 ---
