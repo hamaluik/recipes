@@ -20,6 +20,7 @@ ingredients:
 - 2 tsp salt
 - 2-3 bunches green onion
 instructions: []
+photo: "/images/green-onion-cake.png"
 
 ---
 1. Make the dough
