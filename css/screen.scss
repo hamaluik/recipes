@@ -6,6 +6,7 @@ $baseurl: "{{ site.baseurl }}";
 @import 'theme';
 @import 'typography';
 @import 'cooktimes';
+@import 'photos';
 
 body {
     padding: 1rem;
@@ -28,8 +29,4 @@ footer {
     font-size: smaller;
     border-top: 1px solid var(--text-color);
     padding: 0.5em;
-    svg {
-        height: 1em;
-        fill: currentColor;
-    }
 }

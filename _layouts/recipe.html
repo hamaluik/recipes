@@ -3,8 +3,23 @@
 {% include head.html %}
 <body>
     <h1>{{ page.title }}</h1>
-    {% if page.description %}<p>{{ page.description }}</p>{% endif %}
-    {% if page.servings %}<p><b>Servings:</b> {{ page.servings }}</p>{% endif %}
+    {% if page.photo != null and page.photo != "" %}
+        <figure>
+            <picture class="photo">
+                <img src="{{ page.photo | relative_url }}" alt="Photo of recipe: {{ page.title }}" />
+            </picture>
+            {% if page.photosource.name != null and page.photosource.name != "" %}
+            {% assign photosource_display = page.photosource.name %}
+            {% elsif page.photosource.url != null and page.photosource.url != "" %}
+            {% assign photosource_display = page.photosource.url %}
+            {% else %}
+            {% assign photosource_display = "?" %}
+            {% endif %}
+            <figcaption><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M512 144v288c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48h88l12.3-32.9c7-18.7 24.9-31.1 44.9-31.1h125.5c20 0 37.9 12.4 44.9 31.1L376 96h88c26.5 0 48 21.5 48 48zM376 288c0-66.2-53.8-120-120-120s-120 53.8-120 120 53.8 120 120 120 120-53.8 120-120zm-32 0c0 48.5-39.5 88-88 88s-88-39.5-88-88 39.5-88 88-88 88 39.5 88 88zm-120 0c0-17.6 14.4-32 32-32 8.8 0 16-7.2 16-16s-7.2-16-16-16c-35.3 0-64 28.7-64 64 0 8.8 7.2 16 16 16s16-7.2 16-16z"/></svg> {% if page.photosource.url != null and page.photosource.url != "" %}<a href="{{page.photosource.url}}">{{photosource_display}}</a>{% else %}{{photosource_display}}{% endif %}</figcaption>
+        </figure>
+    {% endif %}
+    {% if page.description != null and page.description != "" %}<p>{{ page.description }}</p>{% endif %}
+    {% if page.servings != null and page.servings != "" %}<p><b>Servings:</b> {{ page.servings }}</p>{% endif %}
     <div class="cooktimes">
         {% if page.preptime %}
             {% assign preptime = page.preptime %}
@@ -37,7 +52,7 @@
         {% elsif page.source.url != null and page.source.url != "" %}
         {% assign source_display = page.source.url %}
         {% else %}
-        {% assign source_display = "Unknown" %}
+        {% assign source_display = "?" %}
         {% endif %}
         <p><b>Source:</b> {% if page.source.url != null and page.source.url != "" %}<a href="{{page.source.url}}">{{source_display}}</a>{% else %}{{source_display}}{% endif %}</p>
     {% endif %}

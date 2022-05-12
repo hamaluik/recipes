@@ -2,7 +2,11 @@
 layout: recipe
 category: Snack
 title: Green Onion Cakes
-description: ''
+description: “Chinese-style” green onion cakes, fried and delicious.
+photo: "/images/green-onion-cake.png"
+photosource:
+  name: Green Onion Cake Man
+  url: https://www.youtube.com/watch?v=D3FTJESc1GY
 source:
   name: The Green Onion Cake Man
   url: https://www.youtube.com/watch?v=D3FTJESc1GY
@@ -20,7 +24,6 @@ ingredients:
 - 2 tsp salt
 - 2-3 bunches green onion
 instructions: []
-photo: "/images/green-onion-cake.png"
 
 ---
 1. Make the dough

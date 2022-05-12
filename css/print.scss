@@ -5,6 +5,7 @@ $baseurl: "{{ site.baseurl }}";
 @import "fonts";
 @import "typography";
 @import 'cooktimes';
+@import 'photos';
 
 @media print {
     footer {
