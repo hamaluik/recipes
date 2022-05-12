@@ -1,7 +1,7 @@
 ---
 layout: recipe
-category: Snack / Side
-title: Broccoli Salad
+category: Dinner
+title: Brocoli Salad
 description: ''
 source:
   name: Meridel Hamaluik
@@ -10,7 +10,7 @@ preptime:
 cooktime: 240
 servings: 8
 ingredients:
-- A bowl full of brocolli
+- A bowl full of brocoli
 - 10 strips crumbled bacon
 - 4 green onions, diced
 - 3/4 cup raisins

@@ -2,7 +2,8 @@
 <html>
 {% include head.html %}
 <body>
-    <h1>Recipes</h1>
+    <h1>{{ site.title }}</h1>
+    <p class="tagline">{{ site.tagline }}</p>
     {% assign groups = site.recipes | group_by: "category" | sort: "title" %}
     {% for group in groups %}
         <h2>{{ group.name }}</h2>

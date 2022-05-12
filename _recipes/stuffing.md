@@ -1,7 +1,7 @@
 ---
 layout: recipe
-category: Snack / Side
-title: Meridel Hamaluik
+category: Dinner
+title: Turkey Stuffing
 description: ''
 source:
   name: Meridel Hamaluik
@@ -17,7 +17,7 @@ ingredients:
 - 1-2 tsp poultry seasoning
 - 5-6 tsp sage
 instructions:
-- Simmer diced onions and spirces in margarine in a pot
+- Simmer diced onions and spices in margarine in a pot
 - Put breadcrumbs in a massive bowl and pour simmered margarine over the breadcrumbs
 - Mix
 - Let sit for a while and mix again

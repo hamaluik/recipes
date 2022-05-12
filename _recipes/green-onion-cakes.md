@@ -1,6 +1,6 @@
 ---
 layout: recipe
-category: Snack / Side
+category: Snack
 title: Green Onion Cakes
 description: ''
 source:

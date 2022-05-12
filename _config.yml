@@ -1,9 +1,10 @@
-title: Recipes
+title: Hamaluik Recipes
 description: >-
   Recipes I've collected
 domain: hamaluik.github.io
 url: https://hamaluik.github.io
 baseurl: /recipes/
+tagline: "A personal collection of tried-and-true recipes without the fluff."
 
 collections:
   recipes:
