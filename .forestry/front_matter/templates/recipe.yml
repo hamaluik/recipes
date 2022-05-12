@@ -31,7 +31,7 @@ fields:
     - Dessert
     - Drinks
     - Other
-    - Snack / Side
+    - Snack
     source:
       type: simple
       section: 
@@ -85,10 +85,7 @@ pages:
 - _recipes/green-onion-cakes.md
 - _recipes/hamburger-soup.md
 - _recipes/ma-s-fresh-strawberry-cake.md
-- _recipes/make-ahead-of.md
-- _recipes/meridel-hamaluik.md
 - _recipes/nova-scotia-chicken.md
 - _recipes/rice-krispie-squares.md
-- _recipes/stew-dunpings.md
 - _recipes/tuck-shop-cinnamon-buns.md
 - _recipes/ultimate-sugar-cookies.md
