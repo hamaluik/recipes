@@ -15,6 +15,12 @@ fields:
   label: Recipe Title / Name
   config:
     required: true
+- name: photo
+  type: file
+  config:
+    maxSize: 16
+  label: Photo
+  description: An optional photo for what the cooked recipe looks like
 - type: text
   name: description
   label: Description
