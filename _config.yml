@@ -3,7 +3,7 @@ description: >-
   Recipes I've collected
 domain: hamaluik.github.io
 url: https://hamaluik.github.io
-baseurl: /recipes/
+baseurl: /
 tagline: "A personal collection of tried-and-true recipes without the fluff."
 
 collections:
