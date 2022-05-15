@@ -2,10 +2,10 @@
 layout: recipe
 category: Breakfast
 title: Crepes
-photo: ''
+photo: "/images/7132dded-d47a-40ea-afe0-936e0632fae2.jpeg"
 description: ''
 photosource:
-  name: ''
+  name: Helen Rennie
   url: ''
 source:
   name: Helen Rennie
