@@ -23,6 +23,5 @@ ingredients:
 - 54g 1/4 cup neutral oil
 - Frozen butter for frying
 instructions: []
-published: false
 
 ---
